@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Light cyan background for a refreshing look */
+  }
+  
+  .todo-container {
+    background-color: #ffffff; /* White for container */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    width: 400px; /* Wider container for better spacing */
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #2c3e50; /* Dark blue for title */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add space between input and button */
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1; /* Allow input to take up remaining space */
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .task-list {
+    max-height: 300px; /* Limit height for scrollable list */
+    overflow-y: auto; /* Add scroll for overflow */
+    padding-right: 5px; /* Avoid cutting off scrollbar */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2c3e50;
+  }
+  
+  li button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #c0392b;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    color: #7f8c8d; /* Subtle grey for empty state */
+    margin-top: 20px;
+  }
+  
+  
+  
